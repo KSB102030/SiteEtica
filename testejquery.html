@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+  <h1 id="titulo">Olá, Mundo!</h1>
+  <button id="botao">Botão</button>
+
+  <script>
+    // Espera o documento estar pronto
+    $(document).ready(function(){
+    // Adicionando um evento de clique ao botão
+    $("#botao").click(function(){
+        alert("Alterando titulo!");
+        $("#titulo").text("Olá, jQuery!").css("color","red");
+      });  
+    });
+  </script>
+</body>
+</html>
